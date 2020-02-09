@@ -14,7 +14,7 @@ header h2{
     color: #CEC8FF;
 }
 
-footer{
+.site-footer{
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
@@ -31,7 +31,7 @@ footer{
     border-bottom: 1px solid rgba(0,0,0,.1);
     min-height: 200px;
 }
-header li, header a{
+header li{
     font-family: "Lobster", cursive;
     background-image: linear-gradient(#CEC8FF, rgb(148, 137, 196));
     padding: 10px;
