@@ -8,12 +8,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="/nucampsite/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="/nucampsite/node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/nucampsite/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="/nucampsite/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles1.css" />
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
@@ -23,70 +23,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="/nucampsite/img/logo.png" alt="" class="img-fluid">
+                    <img src="/img/logo.png" alt="" class="img-fluid">
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-info btn-lg" data-toggle="modal" data-target="#reserveModal" role="button">Reserve Campsite</a>
+                    <a class="btn btn-success btn-lg" href="#reserveForm" role="button" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or call us at <strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="modal fade" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="reserveModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header bg-info text-white">
-                <h5 class="modal-title" id="reserveModal">Reserve a Campsite</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-            </div>
-            <div class="modal-body">
-                <form id="reserveForm">
-                    <div class="form-group form-row">
-                        <label class="col-sm-6 col-form-label pl-0" for="numCampers">Number of Campers</label>
-                        <select class="col form-control" name="numCampers" id="numCampers">
-                            <option selected>Select...</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">5</option>
-                        </select>
-                    </div>
-                    <div class="form-group form-row">
-                        <label class="col-sm-6 col-form-label pl-0" for="date">Date</label>
-                        <input class="col form-control" type="date" id="date" name="date" placeholder="Date">
-                    </div>
-                    <div class="form-group form-row">
-                        <label class="col-sm-6 col-form-label">Campsite Type</label>
-                        <div class="col btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-success">
-                                <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
-                              </label>
-                              <label class="btn btn-primary">
-                                <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
-                              </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">Cancel</button>
-                        <button class="btn btn-primary" type="submit">Search</button>
-                    </div>
-                </form>
-            </div>
-          </div>
-        </div>
-    </div>
-
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="/nucampsite/img/logo.png" height="30" width="30" alt=""></a>
+            <a href="#" class="navbar-brand"><img src="/img/logo.png" height="30" width="30" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -153,21 +105,21 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/nucampsite/img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" class="d-block w-100">
+                            <img src="/img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Breadcrumb Trail Campground</h3>
                                 <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path, hide-in-only campground.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/nucampsite/img/react-lake.jpg" alt="React Lake Campground" class="d-block w-100">
+                            <img src="/img/react-lake.jpg" alt="React Lake Campground" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>React Lake Campground</h3>
                                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favourite for fly fishers.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="/nucampsite/img/chrome-river.jpg" alt="Chrome River Campground" class="d-block w-100">
+                            <img src="/img/chrome-river.jpg" alt="Chrome River Campground" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h3>Chrome River Campground</h3>
                                 <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
@@ -191,7 +143,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="/nucampsite/img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Thumbnail">
+                        <img class="d-flex mr-3 img-thumbnail" src="/img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail Thumbnail">
                         <div class="media-body align-self-center">
                             <h3>Our Campsites</h3>
                             <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
@@ -208,13 +160,49 @@
                 </div>
                 <div class="col">
                     <div class="media">
-                        <img src="/nucampsite/img/react-lake-thumb.jpg" alt="React Lake Thumbnail" class="d-flex ml-3 img-thumbnail order-last">
+                        <img src="/img/react-lake-thumb.jpg" alt="React Lake Thumbnail" class="d-flex ml-3 img-thumbnail order-last">
                         <div class="media-body align-self-center">
                             <h3>React Lake Campground</h3>
                             <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                         </div>
                     </div>
                 </div>
+        </div>
+        <div class=" row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label pl-0" for="numCampers">Number of Campers</label>
+                                <select class="col form-control" name="numCampers" id="numCampers">
+                                    <option selected>Select...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">5</option>
+                                </select>
+                            </div>
+                            <div class="row form-group">
+                                <!-- <div class="col-sm-6  pl-0"> -->
+                                    <label class="col-sm-6 col-form-label pl-0" for="date">Date</label>
+                                <!-- </div>
+                                <div class="col"> -->
+                                    <input class="col form-control" type="date" id="date" name="date" placeholder="Date">
+                                <!-- </div> -->
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -225,13 +213,14 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="/nucampsite/img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
+                    <img class="d-flex mr-3 img-thumbnail" src="/img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
                         <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
     <footer class="site-footer">
@@ -261,9 +250,15 @@
         </div>
     </footer>
      <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-     <script src="/nucampsite/node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="/nucampsite/node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="/nucampsite/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ 
+    <script>
+        $(function(){
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 </body>
 
