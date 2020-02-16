@@ -67,10 +67,10 @@
                         <label class="col-sm-6 col-form-label">Campsite Type</label>
                         <div class="col btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-success">
-                                <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
+                                <input type="radio" name="siteType" id="siteTent buttonColor" autocomplete="off" checked onclick="changeColor(this)"> Tent
                               </label>
                               <label class="btn btn-primary">
-                                <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
+                                <input type="radio" name="siteType" id="siteRV buttonColor" autocomplete="off"> RV
                               </label>
                         </div>
                     </div>
@@ -264,7 +264,12 @@
      <script src="/nucampsite/node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="/nucampsite/node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="/nucampsite/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script>
+        function changeColor(btn){
+            console.log('Showing');
+            btn.getElementsByTagName("radio").style.backgroundColor = 'red';
+        }
+    </script>
 </body>
 
 </html>
