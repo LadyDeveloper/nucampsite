@@ -4,6 +4,8 @@
  $color-mid: #901CAD;
  $color-dark: #60106B;
  $color-black-tranparent: rgba(0, 0, 0, 0.5);
+ $color-teal: #17A2B8;
+ $color-white: white;
 
  $body-font: "Open Sans", sans-serif;
  $header-font: "Lobster", cursive;
@@ -72,4 +74,17 @@ header {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+#reserveModal{
+    .modal-header{
+        background-color: $color-teal;
+        color: $color-white;
+    }
+}
+
+#loginModal{
+    .modal-header{
+        background-color: $color-mid;
+        color: $color-white;
+    }
 }
